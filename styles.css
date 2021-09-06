@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: rgba(0,0,0, 0.2);
+  height: 60px;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  padding-left: 1.25rem;
+  font-size: 1.5rem;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  padding-right: 1.25rem;
+}
+
+.navbar-link:hover {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  body.active {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .navbar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: white;
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-menu {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    top: -1000px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 100px);
+  }
+
+  .navbar-menu.active {
+    top: 100%;
+    opacity: 1;
+    z-index: 99;
+    height: 100vh;
+    font-size: 1.5rem;
+    background: rgba(0,0,0, 0.2);
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    transform: translate(5%, 20%)
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+}
