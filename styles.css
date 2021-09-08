@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  background-color: rgba(0,0,0, 0.2);
+  background-color: rgba(0,0,0, 0.9);
   height: 60px;
   padding: 0.5rem calc((100vw - 1200px) / 2);
   display: flex;
@@ -71,7 +71,7 @@
     z-index: 99;
     height: 100vh;
     font-size: 1.5rem;
-    background: rgba(0,0,0, 0.2);
+    background: rgba(0,0,0, 0.9);
   }
 
   #mobile-menu {
@@ -92,4 +92,119 @@
   #mobile-menu.is-active .bar:nth-child(2) {
     opacity: 0;
   }
+}
+
+/* Hero */
+.hero {
+  background: url('./assets/background.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-content {
+  color: black; 
+}
+
+.hero-content .content {
+  position: absolute;
+  right: 25px;
+  bottom: 125px;
+  text-align: right;
+  width: 200px;
+}
+
+.hero-content h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  text-transform: uppercase;
+}
+
+.hero-content h2 {
+  font-size: clamp(0.5rem, 4vw, 5rem);
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 4vw, 2.5rem);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.hero-content .title {
+  position: absolute;
+  top: 175px;
+  left: 25px;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: red;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background: rgb(187, 0, 0)
+}
+
+#hero-img1 {
+  width: 225px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  display: flex;
+  bottom: 100px;
+  left: 25px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px rgba(0,0,0, 0.3);
+  cursor: pointer;
+}
+
+#hero-img2 {
+  width: 225px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  display: flex;
+  bottom: 300px;
+  left: 125px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px rgba(0,0,0, 0.3);
+  cursor: pointer;
+}
+
+#hero-img3 {
+  width: 225px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  display: flex;
+  bottom: 500px;
+  right: 25px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px rgba(0,0,0, 0.3);
+  cursor: pointer;
+}
+
+#hero-img1:hover, #hero-img2:hover {
+  margin-bottom: 10px;
+  z-index: 99;
+}
+
+#hero-img3:hover {
+  margin-bottom: 10px;
 }
