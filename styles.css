@@ -106,10 +106,6 @@
   align-items: center;
 }
 
-.hero-content {
-  color: black; 
-}
-
 .hero-content .content {
   position: absolute;
   right: 25px;
@@ -207,4 +203,79 @@
 
 #hero-img3:hover {
   margin-bottom: 10px;
+}
+
+/* Services */
+
+.services {
+  padding: 6rem calc((100vw - 1200px) / 2);
+  background-color: rgba(0,0,0, 0.9);
+  color: white;
+  text-align: center;
+}
+
+.bar {
+  background-color: white;
+  height: 2px;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+#services-image {
+  width: 70%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 2px black;
+}
+
+.services-container {
+  display: grid;
+  padding: 1.7rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.topline {
+  color: rgba(255, 0, 0, 0.75);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.services-heading {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.services-desc {
+  color: rgba(255,255,255, 0.8);
+}
+
+.services-list {
+  margin-top: 3rem;
+  list-style: none;
+}
+
+.services-item {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.service-icon {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+
+.gear h1 {
+  margin: 1rem;
+}
+
+.gear-item {
+  padding: 0.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
 }
