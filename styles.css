@@ -115,14 +115,15 @@
 }
 
 .hero-content h1 {
-  font-size: clamp(3rem, 8vw, 7rem);
+  font-size: clamp(3.25rem, 8vw, 7rem);
   text-transform: uppercase;
+  margin-bottom: -10px;
 }
 
 .hero-content h2 {
   font-size: clamp(0.5rem, 4vw, 5rem);
   text-transform: uppercase;
-  margin-left: 30px;
+  margin-left: 1.1rem;
 }
 
 .hero-content p {
@@ -163,7 +164,7 @@
   bottom: 100px;
   left: 25px;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 35px;
   box-shadow: 1px 2px 4px rgba(0,0,0, 0.3);
   cursor: pointer;
 }
@@ -177,7 +178,7 @@
   bottom: 300px;
   left: 125px;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 35px;
   box-shadow: 1px 2px 4px rgba(0,0,0, 0.3);
   cursor: pointer;
 }
@@ -191,7 +192,7 @@
   bottom: 500px;
   right: 25px;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 35px;
   box-shadow: 1px 2px 4px rgba(0,0,0, 0.3);
   cursor: pointer;
 }
@@ -209,15 +210,15 @@
 
 .services {
   padding: 6rem calc((100vw - 1200px) / 2);
-  background-color: rgba(0,0,0, 0.9);
+  background-color: black;
   color: white;
   text-align: center;
 }
 
 .bar {
-  background-color: white;
+  background-color: rgba(255,255,255, 0.6);
   height: 2px;
-  width: 100px;
+  width: 125px;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
@@ -236,10 +237,11 @@
 }
 
 .topline {
-  color: rgba(255, 0, 0, 0.75);
+  color: red;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  letter-spacing: 0.15rem;
 }
 
 .services-heading {
@@ -249,6 +251,7 @@
 
 .services-desc {
   color: rgba(255,255,255, 0.8);
+  line-height: 2rem;
 }
 
 .services-list {
@@ -277,5 +280,101 @@
 @media screen and (max-width: 768px) {
   .services-container {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Pricing */
+
+.pricing {
+  background: whitesmoke;
+  padding: 6rem calc((100vw - 1100px) / 2);
+  text-align: center;
+}
+
+.pricing h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  padding: 0 1rem;
+}
+
+.pricing p {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  padding: 1rem;
+}
+
+.pricing-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.pricing-card {
+  padding: 2rem;
+  height: 450px;
+  width: 325px;
+  background: rgba(0,0,0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricing-perks {
+  min-height: 200px;
+}
+
+.pricing-card p {
+  line-height: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.pricing-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.bronze {
+  color: #b47433;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.silver {
+  color: rgb(172, 172, 172);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.gold {
+  color: rgb(230, 179, 50);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-card .button {
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .pricing-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-card {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .pricing-card .button {
+    width: 250px;
   }
 }
