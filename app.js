@@ -39,7 +39,7 @@ gsap.from('.fx4', {
     start: "top center",
   },
   opacity: 0,
-  x: 50,
+  x: -50,
   duration: 0.8,
   stagger: 0.2,
 });
@@ -63,13 +63,13 @@ gsap.from('.fx6', {
   opacity: 0,
   y: 30,
   duration: 0.8,
-  stagger: 0.4,
+  stagger: 0.3,
 });
 
 gsap.from('.fx7', {
   scrollTrigger: {
     trigger: '.fx7',
-    start: "top center"
+    start: "top bottom"
   },
   opacity: 0,
   y: 40,
@@ -80,7 +80,7 @@ gsap.from('.fx7', {
 gsap.from('.fx8', {
   scrollTrigger: {
     trigger: '.fx8',
-    start: "top center"
+    start: "top bottom"
   },
   opacity: 0,
   duration: 0.8,
