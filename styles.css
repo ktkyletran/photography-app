@@ -243,10 +243,10 @@
 }
 
 #services-image {
-  width: 70%;
-  border-radius: 4px;
+  width: 90%;
+  border-radius: 10px;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 2px black;
+  border: whitesmoke 3px solid;
 }
 
 .services-container {
