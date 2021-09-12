@@ -28,10 +28,10 @@
   <div class="hero">
     <div class="hero-content">
       <div class="title">
-        <h1>Vanity</h1>
-        <h2>Photography</h2>
+        <h1 class="fx1">Vanity</h1>
+        <h2 class="fx1">Photography</h2>
       </div>
-      <div class="content">
+      <div class="content fx3">
         <p>Packages starting at $99!</p>
         <a class="button" disabled>Schedule now</a>
       </div>
@@ -56,20 +56,20 @@
         <img src="./assets/black-f30.jpg" alt="BMW F30" id="services-image">
       </div>
       <div class="services-list">
-        <p class="services-item">
-          <i class="fas fa-camera service-icon"></i>Still Shots
+        <p class="services-item fx2">
+          <i class="fas fa-camera service-icon fx2"></i>Still Shots
         </p>
-        <p class="services-item">
+        <p class="services-item fx2">
           <i class="fas fa-search service-icon"></i>Detail Shots
         </p>
-        <p class="services-item">
+        <p class="services-item fx2">
           <i class="fas fa-compact-disc service-icon"></i>Rollers
         </p>
         <hr>
-        <div class="gear">
+        <div class="gear fx2">
           <h1>My Gear:</h1>
-          <p class="gear-item">Camera body - Sony A7iii</p>
-          <p class="gear-item">Lens - Sony FE 35mm f1.8</p>
+          <p class="gear-item fx2">Camera body - Sony A7iii</p>
+          <p class="gear-item fx2">Lens - Sony FE 35mm f1.8</p>
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@
     <div class="bar" style="background-color: black;"></div>
     <h1>Packages</h1>
     <div class="pricing-wrapper">
-      <div class="pricing-card">
+      <div class="pricing-card ">
         <div class="pricing-title">
           <i class="fas fa-box-open bronze"></i>
           <h3>Bronze Package</h3>
@@ -94,7 +94,7 @@
         </div>
         <a class="button" disabled>Choose Package</a>
       </div>
-      <div class="pricing-card">
+      <div class="pricing-card ">
         <div class="pricing-title">
           <i class="fas fa-box-open silver"></i>
           <h3>Silver Package</h3>
@@ -108,7 +108,7 @@
         </div>
         <a class="button" disabled>Choose Package</a>
       </div>
-      <div class="pricing-card">
+      <div class="pricing-card ">
         <div class="pricing-title">
           <i class="fas fa-box-open gold"></i>
           <h3>Gold Package</h3>
@@ -187,6 +187,8 @@
   </div>
 
 <!-- scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
 <script src="./app.js"></script>
 </body>
 </html>
