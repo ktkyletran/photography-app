@@ -170,13 +170,13 @@
   background: rgb(187, 0, 0);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .hero-content {
     grid-template-columns: 1fr;
     margin-left: auto;
     margin-right: auto;
     grid-template-rows: 0px;
-    margin-top: 25vh;
+    margin-top: 35vh;
   }
 
   .hero-content h1 {
@@ -197,6 +197,30 @@
   .hero-content .title {
     text-align: center;
     letter-spacing: 0.35rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-content .title {
+    margin-top: 0;
+  }
+
+  .hero-content .title h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content .title h2 {
+    font-size: 1rem;
+  }
+
+  .hero-content .content p {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+
+  .hero-content .content {
+    margin-bottom: 12rem;
+    padding-right: 0;
   }
 }
 
@@ -427,6 +451,12 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .pricing-card .button {
+    width: 200px;
+  }
+}
+
 /* Examples/Showcase */
 
 .examples {
@@ -649,6 +679,16 @@
 
   .footer-header {
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-header, .footer-location, .footer-links {
+    padding: 0 1.25rem;
   }
 }
 
